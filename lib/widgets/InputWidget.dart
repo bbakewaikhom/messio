@@ -3,7 +3,8 @@ import 'package:messio/config/Palette.dart';
 
 class InputWidget extends StatelessWidget {
 
-  final TextEditingController textEditingController = new TextEditingController();
+  final TextEditingController textEditingController = TextEditingController();
+  InputWidget();
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +15,7 @@ class InputWidget extends StatelessWidget {
             child: new Container(
               margin: new EdgeInsets.symmetric(horizontal: 1.0),
               child: new IconButton(
+                onPressed: (){},
                 icon: new Icon(Icons.face),
                 color: Palette.primaryColor,
               ),

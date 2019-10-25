@@ -9,11 +9,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:messio/main.dart';
+import 'package:messio/pages/ConversationPageList.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+  testWidgets('Main UI test', (WidgetTester tester) async {
     await tester.pumpWidget(Messio());
-    expect(find.text('Hello World!'), findsOneWidget);
+    
+    expect(find.byType(ConversationPageList), findsOneWidget);
   });
 }
